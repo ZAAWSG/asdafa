@@ -1,0 +1,8 @@
+* {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline:0;
+}

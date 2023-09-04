@@ -1,0 +1,33 @@
+{
+  "name": "cosc360-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/mongoose": "^5.5.18",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.3",
+    "node-telegram-bot-api": "^0.61.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/socket.io": "^2.1.2",
+    "nodemon": "^1.19.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  },
+  "scripts": {
+    "start": "node server/dist/index",
+    "dev": "NODE_ENV=development nodemon server/index.ts",
+    "build": "tsc -p . && cd client && npm install --dev && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.une.edu.au:ezoerner/cosc360-project.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
